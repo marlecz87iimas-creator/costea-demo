@@ -42,7 +42,7 @@ export default function Layout() {
             style={{ width: '100%' }}
             onClick={() => {
               reset();
-              window.location.assign('/');
+              window.location.assign(`${import.meta.env.BASE_URL}`);
             }}
           >
             Reiniciar demo

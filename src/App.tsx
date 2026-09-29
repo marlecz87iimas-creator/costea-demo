@@ -11,7 +11,7 @@ import InventarioPage from './pages/InventarioPage';
 export default function App() {
   return (
     <DemoProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/costea-demo">
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<MenuPage />} />

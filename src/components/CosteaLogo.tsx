@@ -1,8 +1,8 @@
 type CosteaLogoVariant = 'icon' | 'full';
 
 const sources: Record<CosteaLogoVariant, string> = {
-  icon: '/costea-icon.png',
-  full: '/costea-logo.png',
+  icon: `${import.meta.env.BASE_URL}costea-icon.png`,
+  full: `${import.meta.env.BASE_URL}costea-logo.png`,
 };
 
 export default function CosteaLogo({

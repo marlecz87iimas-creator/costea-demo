@@ -15,4 +15,6 @@ npm install
 npm run dev
 ```
 
-Abre http://localhost:5176
+Abre http://localhost:5176/costea-demo/
+
+En producción la ruta es `/costea-demo` (ej. https://costea-demo-production.up.railway.app/costea-demo).
