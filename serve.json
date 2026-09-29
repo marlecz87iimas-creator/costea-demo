@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/costea-demo/", "type": 302 }
+  ],
+  "rewrites": [
+    { "source": "/costea-demo/**", "destination": "/costea-demo/index.html" }
+  ]
+}

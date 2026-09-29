@@ -6,7 +6,7 @@ COPY . .
 RUN npm run build \
   && mkdir -p /out/costea-demo \
   && cp -r dist/. /out/costea-demo/ \
-  && printf '%s\n' '<!DOCTYPE html><meta http-equiv="refresh" content="0;url=/costea-demo/">' > /out/index.html
+  && cp serve.json /out/serve.json
 
 FROM node:20-alpine
 WORKDIR /app
@@ -15,4 +15,5 @@ COPY --from=build /out ./dist
 COPY --from=build /app/package.json ./
 RUN npm install --omit=dev serve
 EXPOSE 8080
-CMD ["npx", "serve", "-s", "dist", "-l", "8080"]
+# Sin -s: sirve la carpeta anidada /costea-demo y usa serve.json
+CMD ["npx", "serve", "dist", "-l", "8080", "-c", "dist/serve.json"]
