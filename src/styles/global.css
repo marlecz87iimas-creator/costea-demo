@@ -466,6 +466,14 @@ a { color: inherit; text-decoration: none; }
   display: block;
   margin: 0 auto 0.5rem;
 }
+
+.costea-sidebar-logo {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.65rem;
+}
 .auth-brand h1 { font-size: 2rem; color: var(--primary); font-weight: 800; }
 .auth-brand p { color: var(--text-muted); font-size: 0.88rem; margin-top: 0.35rem; }
 
